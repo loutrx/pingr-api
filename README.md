@@ -2,7 +2,7 @@
 
 **Lightweight server monitoring agent written in Go.**
 
-Pingr is a single-binary monitoring agent that runs on your VPS and exposes a clean REST API. Designed to be consumed by the [Pingr mobile app](https://github.com/otterium/pingr-app), it gives you real-time visibility into your server health — no heavy dashboards, no complex setup.
+Pingr is a single-binary monitoring agent that runs on your VPS and exposes a clean REST API. Designed to be consumed by the [Pingr mobile app](https://github.com/loutrx/pingr-app), it gives you real-time visibility into your server health — no heavy dashboards, no complex setup.
 
 Part of the [Otterium](https://otterium.com) ecosystem.
 
@@ -63,7 +63,7 @@ curl -fsSL https://get.pingr.dev | sh
 
 ### From binary
 
-Download the latest release from [Releases](https://github.com/otterium/pingr-api/releases) and place it in your PATH.
+Download the latest release from [Releases](https://github.com/loutrx/pingr-api/releases) and place it in your PATH.
 
 ```bash
 chmod +x pingr
@@ -73,7 +73,7 @@ sudo mv pingr /usr/local/bin/
 ### From source
 
 ```bash
-git clone https://github.com/otterium/pingr-api.git
+git clone https://github.com/loutrx/pingr-api.git
 cd pingr-api
 go build -o pingr ./cmd/pingr
 ```
@@ -259,7 +259,7 @@ Pingr can be deployed alongside your apps using Kamal as an accessory:
 # In your Kamal deploy.yml
 accessories:
   pingr:
-    image: ghcr.io/otterium/pingr-api:latest
+    image: ghcr.io/loutrx/pingr-api:latest
     host: 123.45.67.89
     port: 9009
     volumes:
